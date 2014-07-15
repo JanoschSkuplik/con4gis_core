@@ -1,6 +1,6 @@
 TERMS OF USE
 
-1. con4gis_common
+1. con4gis_core
 
 This program is free software: you can redistribute it and/or
 modify it under the terms of the GNU Lesser General Public

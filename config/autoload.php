@@ -5,7 +5,7 @@
  *
  * Copyright (c) 2005-2014 Leo Feyer
  *
- * @package Con4gis_common
+ * @package Con4gis_core
  * @link    https://contao.org
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
@@ -26,10 +26,20 @@ ClassLoader::addNamespaces(array
 ClassLoader::addClasses(array
 (
 	// Classes
-	'c4g\C4GHTMLFactory'        => 'system/modules/con4gis_common/classes/C4GHTMLFactory.php',
-	'C4GJQueryGUI'              => 'system/modules/con4gis_common/classes/C4GJQueryGUI.php',
-	'c4g\C4GUtils'              => 'system/modules/con4gis_common/classes/C4GUtils.php',
+	'c4g\C4GHTMLFactory'        => 'system/modules/con4gis_core/classes/C4GHTMLFactory.php',
+	'c4g\C4GInfo'               => 'system/modules/con4gis_core/classes/C4GInfo.php',
+	'C4GJQueryGUI'              => 'system/modules/con4gis_core/classes/C4GJQueryGUI.php',
+	'c4g\C4GUtils'              => 'system/modules/con4gis_core/classes/C4GUtils.php',
 
 	// Models
-	'c4g\C4gActivationkeyModel' => 'system/modules/con4gis_common/models/C4gActivationkeyModel.php',
+	'c4g\C4gActivationkeyModel' => 'system/modules/con4gis_core/models/C4gActivationkeyModel.php',
+));
+
+
+/**
+ * Register the templates
+ */
+TemplateLoader::addFiles(array
+(
+	'be_c4g_info' => 'system/modules/con4gis_core/templates',
 ));
