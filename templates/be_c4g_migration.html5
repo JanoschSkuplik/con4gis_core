@@ -1,0 +1,6 @@
+<div id="tl_buttons">
+	<a href="<?php echo \Environment::get('script'); ?>?do=c4g_core" class="header_back"><?php echo $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['BACK']; ?></a>
+</div>
+<h1 id="tl_welcome">
+	<?php echo sprintf( $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['MIGRATION']['HEADLINE'], $this->mod,$this->mod); ?>
+</h1>

@@ -29,6 +29,7 @@ ClassLoader::addClasses(array
 	'c4g\C4GHTMLFactory'        => 'system/modules/con4gis_core/classes/C4GHTMLFactory.php',
 	'c4g\C4GInfo'               => 'system/modules/con4gis_core/classes/C4GInfo.php',
 	'C4GJQueryGUI'              => 'system/modules/con4gis_core/classes/C4GJQueryGUI.php',
+	'c4g\C4GMigration'          => 'system/modules/con4gis_core/classes/C4GMigration.php',
 	'c4g\C4GUtils'              => 'system/modules/con4gis_core/classes/C4GUtils.php',
 
 	// Models
@@ -41,5 +42,6 @@ ClassLoader::addClasses(array
  */
 TemplateLoader::addFiles(array
 (
-	'be_c4g_info' => 'system/modules/con4gis_core/templates',
+	'be_c4g_info'      => 'system/modules/con4gis_core/templates',
+	'be_c4g_migration' => 'system/modules/con4gis_core/templates',
 ));

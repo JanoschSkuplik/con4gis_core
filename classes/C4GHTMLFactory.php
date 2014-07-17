@@ -76,7 +76,7 @@ class C4GHTMLFactory
 	 * @param  string $class
 	 * @return string
 	 */
-	public static function span( $content, $id = '', $class = '' )
+	public static function span( $content, $id='', $class='' )
 	{
 		$attr = '';
 		if (!empty( $id )) {
@@ -86,6 +86,33 @@ class C4GHTMLFactory
 			$attr .= ' class="' . $class . '"';
 		}
 		return '<span' . $attr . '>' . $content . '</span>';
+	}
+
+	/**
+	 * [imgLink description]
+	 * @param  array  $options [description]
+	 * @return string          [description]
+	 */
+	public static function imgLink( $options=array() )
+	{
+		$options['href'] = $options['href'] ?: '#';
+		$options['addClass'] = $options['addClass'] ?: '';
+		$options['target'] = $options['target'] ? ' target="' . $options['target'] . '"' : '';
+
+		if ($options['c4gImg']) {
+			$options['src'] = 'system/modules/con4gis_core/assets/images/' . $options['c4gImg'] . '.png';
+		} else {
+			$options['src'] = $options['src'] ?: 'system/modules/con4gis_core/assets/images/href.png';
+		}
+
+		$options['imgWidth'] = $options['imgWidth'] ?: '75';
+		$options['imgHeight'] = $options['imgHeight'] ?: '75';
+
+		$options['label'] = $options['label'] ? '<span>' . $options['label'] . '</span>' : '';
+
+		return '<a href="' . $options['href'] . '"' . $options['target'] . ' class="c4g_imgLink ' . $options['addClass'] . '">'.
+				'<img src="' . $options['src'] . '" width="' . $options['imgWidth'] . '" height="' . $options['imgHeight'] . '">'.
+				$options['label'] . '</a>';
 	}
 
 	// ----------------------------------------------------------------------------------
