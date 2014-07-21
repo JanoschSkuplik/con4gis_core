@@ -102,6 +102,22 @@ class C4GUtils
 		return preg_match( '/([^@]+@{1}[^@\.]+\.{1}[A-Za-z0-9]+)/', $mail );
 	}
 
+	public static function startsWith ( $haystack, $needle )
+	{
+	    $length = strlen($needle);
+	    return (substr($haystack, 0, $length) === $needle);
+	}
+
+	public static function endsWith ( $haystack, $needle )
+	{
+	    $length = strlen($needle);
+	    if ($length == 0) {
+	    	return true;
+	    }
+
+	    return (substr( $haystack, -$length ) === $needle);
+	}
+
 	/**
 	 * compresses the raw data set for searching/indexing
 	 * and removes stopwords

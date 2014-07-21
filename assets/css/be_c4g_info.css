@@ -6,13 +6,13 @@
 }
 
 /* links */
-#main a:link, 
-#main a:visited {
+#main .c4g_info a:link, 
+#main .c4g_info a:visited {
 	color: #aaa;
 }
-#main a:hover, 
-#main a:active,
-#main a:focus {
+#main .c4g_info a:hover, 
+#main .c4g_info a:active,
+#main .c4g_info a:focus {
 	color: #4577ac;
 }
 
@@ -42,11 +42,11 @@ a.c4g_imgLink:focus {
 }
 
 /* fieldsets */
-fieldset.tl_box > legend {
+.c4g_info fieldset.tl_box > legend {
 	color: #4577ac;
 	font-weight: bold;
 }
-fieldset.tl_box > legend:hover {
+.c4g_info fieldset.tl_box > legend:hover {
 	color: #2c3e50;
 }
 
@@ -54,6 +54,35 @@ fieldset.tl_box > legend:hover {
 .c4g_textblock {
 	padding: 18px;
 	text-align: justify;
+}
+
+.c4g_error,
+.c4g_errorblock {
+	color: #900;
+	font-weight: bold;
+}
+.c4g_errorblock {
+	display: block;
+	padding: 2px 5px;
+	
+	text-align: justify;
+
+	border-top: 1px solid #900;
+	border-bottom: 1px solid #900;
+}
+.c4g_success,
+.c4g_successblock {
+	color: #090;
+	font-weight: bold;
+}
+.c4g_successblock {
+	display: block;
+	padding: 2px 5px;
+	
+	text-align: justify;
+
+	border-top: 1px solid #090;
+	border-bottom: 1px solid #090;
 }
 
 /* footer */

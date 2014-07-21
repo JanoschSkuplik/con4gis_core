@@ -25,8 +25,10 @@ class C4GInfo extends \BackendModule
      */
     public function generate()
     {
+        $GLOBALS['TL_CSS'][] = 'system/modules/con4gis_core/assets/css/be_c4g_info.css';
+        
     	// check for actions (atm only "migrate")
-    	if (\Input::get('act') != '' && \Input::get('act') == 'migrate') {
+    	if (\Input::get('perf') != '' && \Input::get('perf') == 'migrate') {
     		if (\Input::get('mod') != '') {
 	    		$objCallback = new C4GMigration(\Input::get('mod'));
 	    		return $objCallback->generate();
@@ -41,7 +43,7 @@ class C4GInfo extends \BackendModule
      */
     protected function compile()
     {
-    	$GLOBALS['TL_CSS'][] = 'system/modules/con4gis_core/assets/css/be_c4g_info.css';
+    	// $GLOBALS['TL_CSS'][] = 'system/modules/con4gis_core/assets/css/be_c4g_info.css';
         // $this->Template->c4gModules->con4gis_maps->installed = $GLOBALS[];
     }
 
