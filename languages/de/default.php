@@ -20,7 +20,8 @@
 $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['BACK'] 				= 'Zurück';
 $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['CANCEL']				= 'Abbrechen';
 
-$GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['INTRO'] 				= 'intro Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.';
+$GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['INTRO'] 				= 'Wir möchten es leichter machen, Karten und Kartenprojekte im Internet zu veröffentlichen. con4gis bietet eine einfache Möglichkeit Karten mit Hilfe mächtiger OpenSource Bibliotheken in Websites einzubinden.</br></br>
+Wer ein Geoinformationssystem aufbauen möchte, kann das ohne Programmierkenntnisse schnell und einfach mit con4gis und Contao erreichen - stellen Sie verschiedene Werkzeuge auf der Karte zur Verfügung, binden Sie den Karteneditor an oder zeigen Sie ausgewählte Daten direkt aus der OpenStreetMap-Datenbank an.</br></br>Doch con4gis ist noch mehr. Zum Beispiel ist das Forum ein fester Bestandteil des Baukastens. Mit Hilfe des Forums können Beiträge georeferenziert werden und in der Karte dargestellt werden. Viele weitere Erweiterung sind in der Planung.';
 $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['FOOTER'] 			= 'Ein Projekt der %s.';
 
 $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['MIGRATION']['HEADLINE'] 		= 'Migration (cfs_%1$s -> con4gis_%1$s)';
