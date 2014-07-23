@@ -102,7 +102,15 @@
 
 	<fieldset id="pal_c4g_links" class="tl_box">
 		<legend onclick="AjaxRequest.toggleFieldset(this,'c4g_links')">links</legend>
-		<div>links'n stuff</div>
+		<div>
+                        <ul> 
+                        <li><?php echo $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['con4gis_website']?> -> <a href="http://con4gis.org" target="_blank">http://con4gis.org</a></li>
+                        <li><?php echo $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['osm_website']?> -> <a href="http://openstreetmap.org" target="_blank">http://openstreetmap.org</a></li>
+                        <li><?php echo $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['ol_website']?> -> <a href="http://openlayers.org" target="_blank">http://openlayers.org</a></li>
+                        </ul>
+                        <li><?php echo $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['overpassapi_website']?> -> <a href="http://wiki.openstreetmap.org/wiki/Overpass_API" target="_blank">http://wiki.openstreetmap.org/wiki/Overpass_API</a></li>
+                        </ul>                        
+                </div>
 	</fieldset>
 
 </div>

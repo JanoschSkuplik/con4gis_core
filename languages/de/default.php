@@ -49,4 +49,9 @@ $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['GITHUB'] 			= 'Fork on github';
 $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['MIGRATIONTOOL'] 		= 'Migrationstool';
 $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['INSTALL'] 			= '%s installieren';
 
+$GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['con4gis_website']		= 'con4gis Projektwebsite';
+$GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['osm_website']			= 'Website der OpenStreetMap';
+$GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['ol_website']				= 'OpenLayers Website';
+$GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['overpassapi_website']	= 'Overpass-API Informationen';
+
 ?>
