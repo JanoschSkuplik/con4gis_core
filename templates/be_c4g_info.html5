@@ -1,0 +1,124 @@
+<div id="c4g_header">
+	<img src="system/modules/con4gis_core/assets/images/con4gis_info_head.png" width="741" height="100" alt="con4gis_info_head">
+</div>
+<div>
+	<!-- <h1 id="tl_welcome">SUCCESS!</h1> -->
+	<div class="tl_formbody_edit c4g_textblock"><?php echo $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['INTRO'] ?></div>
+
+</div>
+<div class="tl_formbody_edit c4g_info">
+
+	<fieldset id="pal_c4g_maps" class="tl_box">
+		<legend onclick="AjaxRequest.toggleFieldset(this,'c4g_maps')">con4gis-maps</legend>
+		<div>
+			<?php if ($GLOBALS['c4g_maps_extension']['installed']): ?>
+        		<?php echo C4GHTMLFactory::imgLink( array(
+        			target 		=> '_blank',
+        			c4gImg 		=> 'contao-board',
+        			label 		=> $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['CONTAO_BOARD']
+        		)); ?>
+        		<?php echo C4GHTMLFactory::imgLink( array(
+        			target 		=> '_blank',
+        			href 		=> 'https://www.github.com/kuestenschmiede/con4gis_maps',
+        			c4gImg 		=> 'github',
+        			label 		=> $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['GITHUB']
+        		)); ?>
+        		<?php if ($GLOBALS['cfs_maps_extension']['installed']): ?>
+				<?php echo C4GHTMLFactory::imgLink( array(
+					addClass 	=> 'floatR',
+					href 		=> \Environment::get('script') . '?do=c4g_core&perf=migrate&mod=maps',
+	        			c4gImg 		=> 'migrate',
+	        			label 		=> $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['MIGRATIONTOOL']
+	        		)); ?>
+        		<?php endif; ?>
+        	<?php else: ?>
+        		<?php echo C4GHTMLFactory::imgLink( array(
+        			c4gImg 		=> 'install',
+                                href            => \Environment::get('script') . '?do=repository_catalog&view=con4gis_maps',
+        			label 		=> sprintf( $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['INSTALL'], 'con4gis_maps')
+        		)); ?>
+        	<?php endif; ?>
+		</div>
+	</fieldset>
+
+	<fieldset id="pal_c4g_forum" class="tl_box">
+		<legend onclick="AjaxRequest.toggleFieldset(this,'c4g_forum')">con4gis-forum</legend>
+		<div>
+			<?php if ($GLOBALS['c4g_forum_extension']['installed']): ?>
+        		<?php echo C4GHTMLFactory::imgLink( array(
+        			target 		=> '_blank',
+        			c4gImg 		=> 'contao-board',
+        			label 		=> $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['CONTAO_BOARD']
+        		)); ?>
+        		<?php echo C4GHTMLFactory::imgLink( array(
+        			target 		=> '_blank',
+        			href 		=> 'https://www.github.com/kuestenschmiede/con4gis_forum',
+        			c4gImg 		=> 'github',
+        			label 		=> $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['GITHUB']
+        		)); ?>
+        		<?php if ($GLOBALS['cfs_forum_extension']['installed']): ?>
+				<?php echo C4GHTMLFactory::imgLink( array(
+					addClass 	=> 'floatR',
+					href 		=> \Environment::get('script') . '?do=c4g_core&perf=migrate&mod=forum',
+	        			c4gImg 		=> 'migrate',
+	        			label 		=> $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['MIGRATIONTOOL']
+	        		)); ?>
+        		<?php endif; ?>
+        	<?php else: ?>
+        		<?php echo C4GHTMLFactory::imgLink( array(
+        			c4gImg 		=> 'install',
+                                href            => \Environment::get('script') . '?do=repository_catalog&view=con4gis_forum',
+        			label 		=> sprintf( $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['INSTALL'], 'con4gis_forum')
+        		)); ?>
+        	<?php endif; ?>
+		</div>
+	</fieldset>
+
+	<fieldset id="pal_c4g_groups" class="tl_box">
+		<legend onclick="AjaxRequest.toggleFieldset(this,'c4g_groups')">con4gis-groups</legend>
+		<div>
+			<?php if ($GLOBALS['c4g_groups_extension']['installed']): ?>
+        		<?php echo C4GHTMLFactory::imgLink( array(
+        			target 		=> '_blank',
+        			c4gImg 		=> 'contao-board',
+        			label 		=> $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['CONTAO_BOARD']
+        		)); ?>
+        		<?php echo C4GHTMLFactory::imgLink( array(
+        			target 		=> '_blank',
+        			href 		=> 'https://www.github.com/kuestenschmiede/con4gis_groups',
+        			c4gImg 		=> 'github',
+        			label 		=> $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['GITHUB']
+        		)); ?>
+        	<?php else: ?>
+        		<?php echo C4GHTMLFactory::imgLink( array(
+        			c4gImg 		=> 'install',
+                                href            => \Environment::get('script') . '?do=repository_catalog&view=con4gis_groups',
+        			label 		=> sprintf( $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['INSTALL'], 'con4gis_groups')
+
+        		)); ?>
+        	<?php endif; ?>
+		</div>
+	</fieldset>
+
+	<fieldset id="pal_c4g_links" class="tl_box">
+		<legend onclick="AjaxRequest.toggleFieldset(this,'c4g_links')">links</legend>
+		<div>
+                        <ul> 
+                        <li><?php echo $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['con4gis_website']?> -> <a href="http://con4gis.org" target="_blank">http://con4gis.org</a></li>
+                        <li><?php echo $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['osm_website']?> -> <a href="http://openstreetmap.org" target="_blank">http://openstreetmap.org</a></li>
+                        <li><?php echo $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['ol_website']?> -> <a href="http://openlayers.org" target="_blank">http://openlayers.org</a></li>
+                        </ul>
+                        <li><?php echo $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['overpassapi_website']?> -> <a href="http://wiki.openstreetmap.org/wiki/Overpass_API" target="_blank">http://wiki.openstreetmap.org/wiki/Overpass_API</a></li>
+                        </ul>                        
+                </div>
+	</fieldset>
+
+</div>
+<div id="c4g_footer" class="tl_box c4g_info">
+	<!-- <img src="system/modules/con4gis_core/assets/images/con4gis_info_head.png" width="741" height="100" alt="con4gis_info_head"> -->
+	<span><?php 
+		echo sprintf( $GLOBALS['TL_LANG']['MSC']['C4G_BE_INFO']['FOOTER'],
+			             '<a href="https://www.kuestenschmiede.de" target="_blank">K&uuml;stenschmiede GmbH Software & Design</a>'
+			);
+	?></span>
+</div>
