@@ -31,6 +31,7 @@ ClassLoader::addClasses(array
 	'C4GJQueryGUI'              => 'system/modules/con4gis_core/classes/C4GJQueryGUI.php',
 	'c4g\C4GMigration'          => 'system/modules/con4gis_core/classes/C4GMigration.php',
 	'c4g\C4GUtils'              => 'system/modules/con4gis_core/classes/C4GUtils.php',
+	'c4g\HttpResultHelper'      => 'system/modules/con4gis_core/classes/HttpResultHelper.php',
 
 	// Models
 	'c4g\C4gActivationkeyModel' => 'system/modules/con4gis_core/models/C4gActivationkeyModel.php',
